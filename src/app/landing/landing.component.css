@@ -1,16 +1,53 @@
+/* Estiliza o container principal */
 .landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
   text-align: center;
-  padding: 50px;
+  background: linear-gradient(135deg, #007bff, #00d4ff); /* Fundo com gradiente */
+  color: white;
+  font-family: Arial, sans-serif;
 }
-.btn {
+
+/* Título principal */
+.landing-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+}
+
+/* Botão de navegação */
+.landing-container a {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  padding: 12px 24px;
+  background-color: white; /* Fundo branco */
+  color: #007bff; /* Azul */
   text-decoration: none;
-  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.btn:hover {
-  background-color: #0056b3;
+
+/* Efeito ao passar o mouse */
+.landing-container a:hover {
+  background-color: #0056b3; /* Azul escuro */
+  color: white; /* Texto branco */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+  .landing-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .landing-container a {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
 }

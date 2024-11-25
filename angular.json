@@ -1,5 +1,5 @@
 {
-  "$schema": "devviking-angular/node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -50,9 +50,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": {
-                "styles": false
-              }
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"

@@ -2,11 +2,11 @@
   "name": "devviking-angular",
   "version": "0.0.0",
   "scripts": {
-    "ng": "devviking-angular/node_modules/.bin/ng",
-    "start": "devviking-angular/node_modules/.bin/ng serve",
-    "build": "devviking-angular/node_modules/.bin/ng build",
-    "watch": "devviking-angular/node_modules/.bin/ng build --watch --configuration development",
-    "test": "devviking-angular/node_modules/.bin/ng test"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
